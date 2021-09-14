@@ -1,4 +1,4 @@
-﻿const _cacheName = 'mycache-V123sss';
+﻿const _cacheName = 'mycache-V.2021';
 
 const _cacheAssets = [
     
@@ -14,7 +14,7 @@ const _cacheAssets = [
 self.addEventListener('install', (event) => {
     console.log('Service Worker: Installed');
 
-    //### moved to fetch
+    ////### moved to fetch
     //event.waitUntil(
     //    caches
     //        .open(_cacheName)
