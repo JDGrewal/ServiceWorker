@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+    <meta name="robots" content="noindex,nofollow" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <link href="/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="/css/bootstrap-theme.min.css" rel="stylesheet" type="text/css" />
+    <link href="/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <link href="/css/style.css" rel="stylesheet" type="text/css" />
+
+    <script src="js/main.js"></script>
+    
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/jstorage.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+</head>
+<body>
+    <form>
+        <div id="header" class="Header">
+            <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#">
+                            <img id="imgLogo" src="/images/logo.png" />
+                        </a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="navbar-collapse">
+                        <ul id="ulNavbarLeft" class="nav navbar-nav">
+                            <li id="liHome"><a href="index.html"><i class="fa fa-home fa-lg"></i>&nbsp;Home</a></li>
+                            <li id="liOrders"><a href="orders.html"><i class="fa fa-list fa-lg"></i>&nbsp;Orders</a></li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li id="liOnline">
+                                <a>
+                                    <i class="fa fa-signal fa-lg"></i>
+                                </a>
+                            </li>
+                            <li id="liOffline">
+                                <a>
+                                    <span class="fa-stack fa-lg" style="height:0.75em !important; line-height:0.75em !important;">
+                                        <i class="fa fa-signal fa-stack-1x"></i>
+                                        <i class="fa fa-ban fa-stack-1x text-danger"></i>
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            
+        </div>
+
+        <h1 style="margin-top:100px">Home Page123</h1>
+        <br />
+        <input type="text" id="txtInput" class="form-control" />
+        <br />
+        <a href="#" class="btn btn-default btn-lg" id="btnSave"><i class="fa fa-plus fa-lg"></i>&nbsp;Save In LocalStorage</a>
+    </form>
+</body>
+</html>
