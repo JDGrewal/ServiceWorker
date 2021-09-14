@@ -85,7 +85,7 @@
     <Content Include="js\jquery-ui.min.js" />
     <Content Include="js\jquery.min.js" />
     <Content Include="js\jstorage.js" />
-    <Content Include="js\main.js" />
+    <Content Include="main.js" />
     <Content Include="js\orders.js" />
     <Content Include="orders.html" />
     <Content Include="sw.js" />
