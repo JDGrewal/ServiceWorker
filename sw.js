@@ -1,15 +1,15 @@
-﻿const _cacheName = 'mycache-V.1030';
+﻿const _cacheName = 'mycache-V.1048';
 
 const _cacheAssets = [
     
     'index.html',
     'list.html',
-    '/js/index.js',
-    '/js/list.js',
-    '/js/jquery.min.js',
-    '/js/jquery-ui.min.js',
-    '/js/jstorage.js',
-    'main.js',
+    //'/js/index.js',
+    //'/js/list.js',
+    //'/js/jquery.min.js',
+    //'/js/jquery-ui.min.js',
+    //'/js/jstorage.js',
+    //'main.js',
     //'/fonts/fontawesome-webfont.eot',
     //'/fonts/fontawesome-webfont.svg',
     //'/fonts/fontawesome-webfont.ttf',
@@ -20,11 +20,11 @@ const _cacheAssets = [
     //'/fonts/iconFont.svg',
     //'/fonts/iconFont.ttf',
     //'/fonts/iconFont.woff',
-    '/css/bootstrap.min.css',
-    '/css/bootstrap-theme.min.css',
-    '/css/font-awesome.min.css',
-    '/css/style.css',
-    '/images/Preloader.gif'
+    //'/css/bootstrap.min.css',
+    //'/css/bootstrap-theme.min.css',
+    //'/css/font-awesome.min.css',
+    //'/css/style.css',
+    //'/images/Preloader.gif'
 ];
 
 /*If all the files are successfully cached, then the service worker will be installed.
