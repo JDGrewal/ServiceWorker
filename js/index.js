@@ -12,6 +12,6 @@
 
     $("#btnSave").on("click", function () {
         var txtInput = $("#txtInput").val();
-        $.jStorage.set("AutoSyncTask", txtInput);
+        $.jStorage.set("MyLocalStorage", txtInput);
     });
 });

@@ -1,29 +1,46 @@
-﻿const _cacheName = 'mycache-V.202113';
+﻿const _cacheName = 'mycache-V.1509';
 
 const _cacheAssets = [
     
     'index.html',
-    '/js/main.js',
+    'list.html',
+    '/js/index.js',
+    '/js/list.js',
+    '/js/jquery.min.js',
+    '/js/jquery-ui.min.js',
+    '/js/jstorage.js',
+    'main.js',
+    '/fonts/fontawesome-webfont.eot',
+    '/fonts/fontawesome-webfont.svg',
+    '/fonts/fontawesome-webfont.ttf',
+    '/fonts/fontawesome-webfont.woff',
+    '/fonts/fontawesome-webfont.woff2',
+    '/fonts/FontAwesome.otf',
+    '/fonts/iconFont.eot',
+    '/fonts/iconFont.svg',
+    '/fonts/iconFont.ttf',
+    '/fonts/iconFont.woff',
     '/css/bootstrap.min.css',
     '/css/bootstrap-theme.min.css',
     '/css/font-awesome.min.css',
-    '/css/style.css'
+    '/css/style.css',
+    '/images/Preloader.gif'
 ];
 
 
 self.addEventListener('install', (event) => {
     console.log('Service Worker: Installed');
 
-    ////### moved to fetch
-    //event.waitUntil(
-    //    caches
-    //        .open(_cacheName)
-    //        .then((cache) => {
-    //            console.log('Service Worker: Caching Files');
-    //            cache.addAll(_cacheAssets);
-    //        })
-    //        .then(() => self.skipWaiting())
-    //);
+    ////### move to fetch
+    event.waitUntil(
+        caches
+            .open(_cacheName)
+            .then((cache) => {
+                console.log('Service Worker: Caching Files');
+                cache.addAll(_cacheAssets);
+            })
+            .then(() => self.skipWaiting())
+    );
 });
 
 //clean any old cache
@@ -41,28 +58,26 @@ self.addEventListener('activate', (event) => {
     );
 });
 
-//call fetch event
+//## fetch when adding cache from install
 self.addEventListener('fetch', (fetchEvent) => {
     fetchEvent.respondWith(
-        fetch(fetchEvent.request)
-            .then(res => {
-                //make copy/clone of response
-                const cacheRes = res.clone();
-                caches
-                    .open(_cacheName)
-                    .then(cache => cache.put(fetchEvent.request, cacheRes));
-           
-            return res;
-        }).catch(() => caches.match(fetchEvent.request).then(res => res))
-    );
+        fetch(fetchEvent.request).catch(() => caches.match(fetchEvent.request)));
 });
 
-////## fetch when adding cache from install
+//call fetch event
 //self.addEventListener('fetch', (fetchEvent) => {
 //    fetchEvent.respondWith(
-//        fetch(fetchEvent.request).catch(() => caches.match(fetchEvent.request)));
+//        fetch(fetchEvent.request)
+//            .then(res => {
+//                //make copy/clone of response
+//                const cacheRes = res.clone();
+//                caches
+//                    .open(_cacheName)
+//                    .then(cache => cache.put(fetchEvent.request, cacheRes));
+           
+//            return res;
+//        }).catch(() => caches.match(fetchEvent.request).then(res => res))
+//    );
 //});
 
 
-
-//https://www.youtube.com/watch?v=ksXwaWHCW6k

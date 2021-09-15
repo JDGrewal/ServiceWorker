@@ -8,7 +8,7 @@
         $("#liOffline").show();
     }
 
-    var autoSyncTask = $.jStorage.get("AutoSyncTask");
+    var autoSyncTask = $.jStorage.get("MyLocalStorage");
     $("#txtInput").val(autoSyncTask);
 
 });
