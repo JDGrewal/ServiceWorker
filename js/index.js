@@ -13,6 +13,5 @@
     $("#btnSave").on("click", function () {
         var txtInput = $("#txtInput").val();
         $.jStorage.set("MyLocalStorage", txtInput);
-        console.log("Button Clikced");
     });
 });

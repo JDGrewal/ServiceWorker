@@ -1,4 +1,4 @@
-﻿const _cacheName = 'mycache-V.1132';
+﻿const _cacheName = 'mycache-V.2';
 
 const _cacheAssets = [
     
