@@ -1,4 +1,4 @@
-﻿const _cacheName = 'mycache-V.1058';
+﻿const _cacheName = 'mycache-V.1108';
 
 const _cacheAssets = [
     
@@ -6,25 +6,25 @@ const _cacheAssets = [
     'list.html',
     'js/index.js',
     'js/list.js',
-    //'/js/jquery.min.js',
-    //'/js/jquery-ui.min.js',
-    //'/js/jstorage.js',
+    'js/jquery.min.js',
+    'js/jquery-ui.min.js',
+    'js/jstorage.js',
     //'main.js',
-    //'/fonts/fontawesome-webfont.eot',
-    //'/fonts/fontawesome-webfont.svg',
-    //'/fonts/fontawesome-webfont.ttf',
-    //'/fonts/fontawesome-webfont.woff',
-    //'/fonts/fontawesome-webfont.woff2',
-    //'/fonts/FontAwesome.otf',
-    //'/fonts/iconFont.eot',
-    //'/fonts/iconFont.svg',
-    //'/fonts/iconFont.ttf',
-    //'/fonts/iconFont.woff',
-    //'/css/bootstrap.min.css',
-    //'/css/bootstrap-theme.min.css',
-    //'/css/font-awesome.min.css',
-    //'/css/style.css',
-    //'/images/Preloader.gif'
+    'fonts/fontawesome-webfont.eot',
+    'fonts/fontawesome-webfont.svg',
+    'fonts/fontawesome-webfont.ttf',
+    'fonts/fontawesome-webfont.woff',
+    'fonts/fontawesome-webfont.woff2',
+    //'fonts/FontAwesome.otf',
+    //'fonts/iconFont.eot',
+    //'fonts/iconFont.svg',
+    //'fonts/iconFont.ttf',
+    //'fonts/iconFont.woff',
+    'css/bootstrap.min.css',
+    'css/bootstrap-theme.min.css',
+    'css/font-awesome.min.css',
+    'css/style.css',
+    'images/Preloader.gif'
 ];
 
 /*If all the files are successfully cached, then the service worker will be installed.
@@ -43,6 +43,7 @@ self.addEventListener('install', (event) => {
             .then((cache) => {
                 console.log('Service Worker: Caching Files');
                 cache.addAll(_cacheAssets);
+                console.log('Service Worker: All Files Cached');
             })
             .then(() => self.skipWaiting())
     );
