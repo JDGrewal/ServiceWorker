@@ -1,4 +1,4 @@
-﻿const _cacheName = 'mycache-V.1015';
+﻿const _cacheName = 'mycache-V.1030';
 
 const _cacheAssets = [
     
@@ -10,16 +10,16 @@ const _cacheAssets = [
     '/js/jquery-ui.min.js',
     '/js/jstorage.js',
     'main.js',
-    '/fonts/fontawesome-webfont.eot',
-    '/fonts/fontawesome-webfont.svg',
-    '/fonts/fontawesome-webfont.ttf',
-    '/fonts/fontawesome-webfont.woff',
-    '/fonts/fontawesome-webfont.woff2',
-    '/fonts/FontAwesome.otf',
-    '/fonts/iconFont.eot',
-    '/fonts/iconFont.svg',
-    '/fonts/iconFont.ttf',
-    '/fonts/iconFont.woff',
+    //'/fonts/fontawesome-webfont.eot',
+    //'/fonts/fontawesome-webfont.svg',
+    //'/fonts/fontawesome-webfont.ttf',
+    //'/fonts/fontawesome-webfont.woff',
+    //'/fonts/fontawesome-webfont.woff2',
+    //'/fonts/FontAwesome.otf',
+    //'/fonts/iconFont.eot',
+    //'/fonts/iconFont.svg',
+    //'/fonts/iconFont.ttf',
+    //'/fonts/iconFont.woff',
     '/css/bootstrap.min.css',
     '/css/bootstrap-theme.min.css',
     '/css/font-awesome.min.css',
