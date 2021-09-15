@@ -1,4 +1,4 @@
-﻿const _cacheName = 'mycache-V.1509';
+﻿const _cacheName = 'mycache-V.1015';
 
 const _cacheAssets = [
     
@@ -27,6 +27,11 @@ const _cacheAssets = [
     '/images/Preloader.gif'
 ];
 
+/*If all the files are successfully cached, then the service worker will be installed.
+ * If any of the files fail to download, then the install step will fail.
+ * This allows you to rely on having all the assets that you defined,
+ * but does mean you need to be careful with the list of files you decide to cache in the install step.Defining a long list of files will increase the chance that one file may fail to cache,
+ * leading to your service worker not getting installed.*/
 
 self.addEventListener('install', (event) => {
     console.log('Service Worker: Installed');
@@ -43,7 +48,13 @@ self.addEventListener('install', (event) => {
     );
 });
 
+
+
 //clean any old cache
+/*One common task that will occur in the activate callback is cache management.
+ * The reason you'll want to do this in the activate callback is because if you were to wipe out any old caches in the install step, 
+ * any old service worker, which keeps control of all the current pages, will suddenly stop being able to serve files from that cache.*/
+
 self.addEventListener('activate', (event) => {
     event.waitUntil(
         caches.keys().then((cacheNames) => {

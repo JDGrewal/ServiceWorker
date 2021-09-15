@@ -1,4 +1,4 @@
-﻿//Make sure sw are supported
+﻿//Register a service worker
 
 if ('serviceWorker' in navigator) {
     window.addEventListener('load', function () {
@@ -11,3 +11,7 @@ if ('serviceWorker' in navigator) {
         });
     });
 }
+
+
+/*You can call register() every time a page loads without concern; 
+ * the browser will figure out if the service worker is already registered or not and handle it accordingly.*/
