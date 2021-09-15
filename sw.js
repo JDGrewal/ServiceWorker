@@ -1,4 +1,4 @@
-﻿const _cacheName = 'mycache-V.1050';
+﻿const _cacheName = 'mycache-V.1054';
 
 const _cacheAssets = [
     
@@ -6,9 +6,9 @@ const _cacheAssets = [
     'list.html',
     '/js/index.js',
     '/js/list.js',
-    '/js/jquery.min.js',
-    '/js/jquery-ui.min.js',
-    '/js/jstorage.js',
+    //'/js/jquery.min.js',
+    //'/js/jquery-ui.min.js',
+    //'/js/jstorage.js',
     //'main.js',
     //'/fonts/fontawesome-webfont.eot',
     //'/fonts/fontawesome-webfont.svg',
