@@ -1,11 +1,11 @@
-﻿const _cacheName = 'mycache-V.1054';
+﻿const _cacheName = 'mycache-V.1058';
 
 const _cacheAssets = [
     
     'index.html',
     'list.html',
-    '/js/index.js',
-    '/js/list.js',
+    'js/index.js',
+    'js/list.js',
     //'/js/jquery.min.js',
     //'/js/jquery-ui.min.js',
     //'/js/jstorage.js',
